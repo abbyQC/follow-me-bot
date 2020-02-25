@@ -16,6 +16,8 @@
 		8620E8D023E8CAD900385A15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8620E8CE23E8CAD900385A15 /* LaunchScreen.storyboard */; };
 		8620E8DB23E8CAD900385A15 /* follow_me_botTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8620E8DA23E8CAD900385A15 /* follow_me_botTests.swift */; };
 		8620E8E623E8CADA00385A15 /* follow_me_botUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8620E8E523E8CADA00385A15 /* follow_me_botUITests.swift */; };
+		865B665424024E240088B082 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B665324024E240088B082 /* Location.swift */; };
+		865B6656240252410088B082 /* LocationStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B6655240252410088B082 /* LocationStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		8620E8E123E8CADA00385A15 /* follow-me-botUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "follow-me-botUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8620E8E523E8CADA00385A15 /* follow_me_botUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = follow_me_botUITests.swift; sourceTree = "<group>"; };
 		8620E8E723E8CADA00385A15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		865B665324024E240088B082 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		865B6655240252410088B082 /* LocationStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 		861EC94523F0B3BB000ECE30 /* storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				8620E8C923E8CAD700385A15 /* Main.storyboard */,
 			);
 			path = storyboard;
 			sourceTree = "<group>";
@@ -103,6 +108,9 @@
 		861EC94623F0B3CA000ECE30 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				861EC94123F0B2D9000ECE30 /* bluetooth_connection_model.swift */,
+				865B665324024E240088B082 /* Location.swift */,
+				865B6655240252410088B082 /* LocationStorage.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -136,11 +144,9 @@
 				861EC94423F0B3A0000ECE30 /* view controller */,
 				8620E8CC23E8CAD900385A15 /* Assets.xcassets */,
 				861EC94523F0B3BB000ECE30 /* storyboard */,
-				8620E8C923E8CAD700385A15 /* Main.storyboard */,
 				8620E8CE23E8CAD900385A15 /* LaunchScreen.storyboard */,
 				8620E8D123E8CAD900385A15 /* Info.plist */,
 				861EC94623F0B3CA000ECE30 /* model */,
-				861EC94123F0B2D9000ECE30 /* bluetooth_connection_model.swift */,
 			);
 			path = "follow-me-bot";
 			sourceTree = "<group>";
@@ -294,8 +300,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				865B6656240252410088B082 /* LocationStorage.swift in Sources */,
 				861EC94223F0B2D9000ECE30 /* bluetooth_connection_model.swift in Sources */,
 				8620E8C823E8CAD700385A15 /* mainViewController.swift in Sources */,
+				865B665424024E240088B082 /* Location.swift in Sources */,
 				8620E8C423E8CAD700385A15 /* AppDelegate.swift in Sources */,
 				8620E8C623E8CAD700385A15 /* SceneDelegate.swift in Sources */,
 			);

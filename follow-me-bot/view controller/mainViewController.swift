@@ -13,9 +13,11 @@ class ViewController: UIViewController {
 
     @IBAction func start(_ sender: UIButton)
     {
+
         //button_pressed = !button_pressed
-        //
          //updateUI()
+        UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
+        
     }
     
     @IBAction func unwindToRed (unwindSegue: UIStoryboardSegue){
